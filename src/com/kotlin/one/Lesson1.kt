@@ -31,16 +31,23 @@ fun main() {
     println(message);
 
 
+        val fruits = listOf("mango", "banana", "pineapple", "orange")
 
-    // ✅ EXERCISE 3 list and Loops:
-    // Create a list of your favorite fruits
-    // Loop through the list and print each fruit in uppercase
-    // Then, print the total number of fruits in the list
-    // Ask the user to enter a fruit name and check if it's in the list
+        for (fruit in fruits) {
+            println(fruit.uppercase())
+        }
 
-    TODO(
-        "Exercise 3 List and Loops implementation"
-    )
+        println("Total fruits: ${fruits.size}")
+
+        print("Enter a fruit name: ")
+        val input = readLine()?.trim()?.lowercase()
+
+        if (input != null && input in fruits) {
+            println("Yes, $input is in the list!")
+        } else {
+            println("No, it's not in the list.")
+        }
+
 
     // ✅EXERCISE 4 Elvis Operator:
     // Create a nullable variable `nickname` of type String? and assign it null

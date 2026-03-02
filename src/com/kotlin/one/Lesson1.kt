@@ -16,18 +16,21 @@ fun main() {
     // Then print the sentence again after changing `temperature`
 
 
-    // ✅ EXERCISE 2 Conditionals:
-    // Create a variable `score` (Int)
-    // Handle the following cases:
-    // - If score is exactly 100, print "Perfect score!"
-    // - If score is below 0 or above 100, print "Invalid score"
-    // - If score between 0 and 49, print "You failed!"
-    // - If score between 50 and 60, print "Just passed!"
-    // - If score between 61 and 99, print "Well done!"
+    var score:Int = 53;
+    var message:String="";
+    if(score==100)
+        message="Perfect score";
+    else if(score <0 || score > 100)
+        message="Invalid score";
+    else if(score>=0 && score <= 49)
+        message="You failed!";
+    else if(score>=50 && score <= 60)
+        message="Just passed!";
+    else if(score>=61 && score <= 99)
+        message="Well done!";
+    println(message);
 
-    TODO(
-        "Exercise 2 Conditionals implementation"
-    )
+
 
     // ✅ EXERCISE 3 list and Loops:
     // Create a list of your favorite fruits

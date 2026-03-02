@@ -8,7 +8,7 @@ fun main() {
 
     val city:String = "Port-au-Prince";
     var temperature: Double = 3.14;
-    println("It is "+temperature+"°C in "+city)
+    println("It is "+temperature+"°C in "+city);
     // ✅ EXERCISE 1 Variables:
     // Create two variables: `city` (String) and `temperature` (Double)
     // Then print: "It is {temperature}°C in {city}"
@@ -31,32 +31,33 @@ fun main() {
     println(message);
 
 
-        val fruits = listOf("mango", "banana", "pineapple", "orange")
+        val fruits = listOf("mango", "banana", "pineapple", "orange");
 
         for (fruit in fruits) {
-            println(fruit.uppercase())
+            println(fruit.uppercase());
         }
 
-        println("Total fruits: ${fruits.size}")
+        println("Total fruits: ${fruits.size}");
 
-        print("Enter a fruit name: ")
-        val input = readLine()?.trim()?.lowercase()
+        print("Enter a fruit name: ");
+        val input = readLine()?.trim()?.lowercase();
 
         if (input != null && input in fruits) {
-            println("Yes, $input is in the list!")
+            println("Yes, $input is in the list!");
         } else {
-            println("No, it's not in the list.")
+            println("No, it's not in the list.");
         }
 
 
-    // ✅EXERCISE 4 Elvis Operator:
-    // Create a nullable variable `nickname` of type String? and assign it null
-    // Print the number of characters in `nickname`
-    // Print the nickname or "No nickname provided" if it's null using the Elvis operator
+    val nickname: String? = null;
 
-    TODO(
-        "Exercise 4 Elvis Operator implementation"
-    )
+    val length = nickname?.length ?: 0;
+    println("Nickname length: $length");
+
+    val displayName = nickname ?: "No nickname provided";
+    println(displayName);
+
+
 
 }
 

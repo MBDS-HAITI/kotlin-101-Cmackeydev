@@ -6,15 +6,14 @@ fun main() {
     println("Let's start learning step by step.\n")
 
 
+    val city:String = "Port-au-Prince";
+    var temperature: Double = 3.14;
+    println("It is "+temperature+"°C in "+city)
     // ✅ EXERCISE 1 Variables:
     // Create two variables: `city` (String) and `temperature` (Double)
     // Then print: "It is {temperature}°C in {city}"
     // Enforce `city` to be immutable and `temperature` mutable
     // Then print the sentence again after changing `temperature`
-
-    TODO(
-        "Exercise 1 Variables implementation"
-    )
 
 
     // ✅ EXERCISE 2 Conditionals:

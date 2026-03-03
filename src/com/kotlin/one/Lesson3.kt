@@ -1,5 +1,8 @@
-package com.android.com.kotlin.one
+package com.android.com.kotlin.one;
 
+class Character(val name:String , val type:String){
+
+}
 fun main() {
-    TODO("Suivez les instructions dans le fichier README_03.md")
+
 }
